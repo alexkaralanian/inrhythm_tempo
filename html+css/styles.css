@@ -1,0 +1,187 @@
+@media screen and (max-width: 768px) {
+	.candidates {
+		grid-template-columns: 1fr; 
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.candidates {
+		grid-template-columns: 1fr 1fr; 
+	}
+}
+
+html, body { 
+	padding: 5px;
+	margin: 0;
+	font-family: arial, sans-serif;
+}
+
+.container {
+/*	padding: 5px;*/
+	border-radius: 3px;
+	display: grid;
+	grid-template-columns: 1fr; 
+	grid-template-rows: 1fr;
+	max-width: 960px;
+	margin: 0 auto;
+	border: 1px solid black;
+	margin-bottom: 10px;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Dashboard */
+
+header h1, h2 {
+	text-align: center;
+}
+
+.login button {
+	background-color: red;
+	color: black;
+	font-size: 16px;
+	padding: 10px;
+	width: 200px;
+	height: 45px;
+}
+
+/* Header */
+
+.countWrapper {
+	display: flex;
+	align-items: center;
+}
+
+.hireCount {
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 3em;
+	width: 3em;
+	border: 1px solid black;
+	margin-right: .8em;
+	margin-left: 5px;
+}
+
+.hireCount span {
+	font-size: 2.5em;
+}
+
+/* Search */
+
+.search {
+	margin: 5px;
+	margin-top: 1em;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.search input {
+	border: none;
+	width: 100%;
+	height: 2.5em;
+	font-size: 14px;
+	padding-left: 10px;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.searchImg {
+	right: 10px;
+	position: absolute;
+	z-index: 2;
+	height: 30px;
+	width: 30px;
+}
+
+/* Sorting */
+
+.sortingTabs {
+	margin-top: 1em;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	display: flex;
+}
+
+.sortingTabs button {
+	border-radius: 3px;
+	padding: 10px;
+	margin-right: 10px;
+}
+
+.sortingTabs button span {
+	font-size: 13px;
+}
+
+/* Candidates */
+
+.candidates {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 5px;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.candidateCards {
+	position: relative;
+	border: 1px black solid;
+	margin-top: 15px;
+	display: flex;
+	align-items: center;
+	border-radius: 3px;
+}
+
+.candidateImg {
+	height: 75px;
+	width: 75px;
+	border: 1px solid black;
+	border-radius: 3px; 
+	margin: 10px;
+}
+
+.candidateImg img {
+	height: 75px;
+	width: 75px;
+}
+
+.candidateInfo {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 10px;
+}
+
+.event {
+	background-color: black;
+	color: white;
+	border: 1px solid black;
+	border-radius: 3px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: -5px;
+	margin-right: -3px;
+	padding: 3px;
+	font-size: 14px;
+}
+
+.stage {
+	background-color: black;
+	text-align: center;
+	align-self: center;
+	color: white;
+	font-size: 14px;
+	border-radius: 3px;
+	position: absolute;
+	right: 14px;
+	padding: 5px;
+	width: 50px;
+}

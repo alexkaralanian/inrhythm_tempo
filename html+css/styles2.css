@@ -1,0 +1,59 @@
+@media screen and (max-width: 768px) {
+	.candidates {
+		grid-template-columns: 1fr; 
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.candidates {
+		grid-template-columns: 1fr 1fr; 
+	}
+}
+
+
+html, body {
+	padding: 5px;
+	margin: 0;
+	font-family: arial, sans-serif;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr; 
+	grid-template-rows: 1fr;
+	max-width: 960px;
+	margin: 0 auto;
+	border: 1px solid black;
+	margin-bottom: 10px;
+}
+
+.header {
+	/*border: 1px solid black;*/
+	justify-content: center;
+}
+
+
+
+/* row start / col start / row end / col end */
+.search {
+	/*border: 1px solid black;*/
+}
+
+.sortingTabs {
+	/*border: 1px solid black;	*/
+}
+
+.candidates {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  max-width: 960px;
+  margin: 0 auto;
+	/*border: 2px solid black;*/
+}
+
+.candidateCards {
+	background-color: green;
+	border: 1px solid black;
+}
